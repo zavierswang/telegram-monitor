@@ -1,0 +1,15 @@
+app:
+  env: test
+  app_name: telegram-scanner
+
+telegram:
+  callback: http://127.0.0.1:80/api/callback/trc20      #通知回调接口
+  tron_scan_key: c7f4c832-3be3-4581-963d-66fce35a05b4   #tronScan apiKey（正式环境建议更换）
+  tron_grid_key: bef4d9b7-949d-4659-bd8d-34fe036abda4   #tronGrid apiKey（正式环境建议更换）
+
+mq:                                                     #RabbitMQ配置信息
+  username: root
+  password: 123456
+  host: 127.0.0.1
+  port: 5672
+  vhost: /

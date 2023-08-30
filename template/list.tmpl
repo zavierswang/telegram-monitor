@@ -1,0 +1,7 @@
+<b>当前所有用户列表</b>：
+
+{{range $user := .}}
+<b>用户名称:</b> <code>{{replace "@" $user.Username}}</code>
+<b>用效日期:</b> {{format $user.ExpiredAt}}
+<b>超级用户:</b> {{bool $user.IsAdmin}}
+ ➖➖➖➖➖➖➖➖➖➖➖➖➖{{end}}
